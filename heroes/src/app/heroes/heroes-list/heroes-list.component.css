@@ -1,0 +1,57 @@
+.data-table {
+  width: 80%;
+  margin: 20px auto;
+}
+
+.table {
+  height: 500px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+/* .example-card {
+  max-width: 400px;
+}
+
+.list-header > h1 {
+  font-family: 'Shadows Into Light', cursive !important;
+}
+
+.heroes-list {
+  display: flex;
+  list-style: none;
+}
+
+.heroes-box {
+  background-color: #b9c2c4;
+    box-shadow: 10px 5px #af9970;
+    border-radius: 28px;
+    padding: 10px 28px;
+    text-align: center;
+    margin: 10px 50px;
+    font-family: 'Shadows Into Light', cursive !important;
+}
+.heroes-box > h3 {
+  font-family: 'Shadows Into Light', cursive !important;
+}
+.heroes-img {
+
+  border-radius: 50%;
+}
+
+.heroes-img > img {
+  width: 100%;
+  height: 150px;
+}
+
+.heroes-name {
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.heroes-info {
+  text-decoration: underline;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+} */

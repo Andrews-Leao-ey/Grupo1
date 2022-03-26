@@ -1,0 +1,59 @@
+
+
+
+<h2>CRIE SEU HEROI</h2>
+<mat-card>
+  <form [formGroup]="heroForm" (ngSubmit)="onAddHero()">
+      <mat-label>Nome do Herói: </mat-label>
+      <mat-form-field appearance="fill">
+        <mat-label>Ex: Charmander</mat-label>
+        <input
+          matInput
+          id="name"
+          formControlName="name">
+      </mat-form-field>
+      <mat-label>Selecione os poderes: </mat-label>
+      <mat-form-field>
+        <mat-label>Ex.: Fogo, Água, Controle da Mente: </mat-label>
+        <input
+          matInput
+          id="filter"
+          formControlName="filter">
+      </mat-form-field>
+    <!-- <mat-form-field appearance="fill">
+      <mat-select formControlName="powerList" multiple>
+        <mat-option *ngFor="let power of powersFiltered" [value]="power">{{power}}</mat-option>
+      </mat-select>
+    </mat-form-field> -->
+      <mat-list>
+        <mat-selection-list [multiple]="true" formControlName="powerList">
+          <mat-list-option *ngFor="let power of powersFiltered" [value]="power.poder">
+            {{power.poder}}
+          </mat-list-option>
+        </mat-selection-list>
+      </mat-list>
+      <mat-label>Nome do Universo:</mat-label>
+    <mat-form-field>
+      <mat-label>Ex.: Marvel, DC, Dora Aventureira.</mat-label>
+      <input
+          matInput
+          id="filterUniverse"
+          formControlName="filterUniverse">
+    </mat-form-field>
+    <!-- <mat-form-field appearance="fill">
+      <mat-select formControlName="universe">
+        <mat-option *ngFor="let universe of universesFiltered" [value]="universe">{{universe}}</mat-option>
+      </mat-select>
+    </mat-form-field> -->
+    <mat-list>
+      <mat-selection-list [multiple]="false" formControlName="universe">
+        <mat-list-option *ngFor="let universe of universesFiltered" [value]="universe.universo">
+          {{universe.universo}}
+        </mat-list-option>
+      </mat-selection-list>
+    </mat-list>
+    <button mat-raised-button color="accent" type="submit">Criar Herói</button>
+  </form>
+</mat-card>
+
+
